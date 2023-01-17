@@ -14,7 +14,7 @@ function Dropdown() {
         {/* About */}
         <Link
           to="sec-aboutme" className="scroll-link"
-          spy={true} smooth={true} offset={20} duration={500}>
+          spy={true} smooth={true} offset={-25} duration={500}>
           About
         </Link>
         <div className="empty-gap"></div>
@@ -22,7 +22,7 @@ function Dropdown() {
         {/* Sites */}
         <Link
           to="sec-sites" className="scroll-link"
-          spy={true} smooth={true} offset={-100} duration={500}
+          spy={true} smooth={true} offset={-125} duration={500}
           >  
           Sites
         </Link>
@@ -31,7 +31,7 @@ function Dropdown() {
         {/* Projects */}
         <Link
           to="sec-projects" className="scroll-link"
-          spy={true} smooth={true} offset={-100} duration={500}>
+          spy={true} smooth={true} offset={-125} duration={500}>
           Projects
         </Link>
         <div className="empty-gap"></div>
@@ -39,7 +39,7 @@ function Dropdown() {
         {/* Contact */}
         <Link id="nav-dropdown-contact"
           to="sec-contact" className="scroll-link"
-          spy={true} smooth={true} offset={-125} duration={500}>
+          spy={true} smooth={true} offset={-150} duration={500}>
           <img className="icon-white" src={iconEnvelope} alt="" />
           Contact Me
         </Link>

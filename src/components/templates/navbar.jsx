@@ -36,7 +36,7 @@ function Navbar(props) {
         <ReactTooltip anchorId="portrait-mini"/>
 
         {/* Hamburger Menu Icon (only show on smaller devices) */}
-        <a id="navbar-hamburger" data-tooltip-content="Navigation options"
+        <a href="#0" id="navbar-hamburger" data-tooltip-content="Navigation options"
         onClick={() => setOpen(!open)}>
           <img src={iconHamburger} alt="" />
         </a>
