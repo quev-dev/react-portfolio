@@ -1,6 +1,6 @@
 ///@description Create Navbar
 // Import Graphics
-import iconEnvelope from '../assets/icons/envelope.svg';
+// import iconEnvelope from '../assets/icons/envelope.svg';
 import portraitMini from '../assets/images/profile-mini.png';
 import borderNavbar1 from '../assets/borders/borderNav1.svg';
 
