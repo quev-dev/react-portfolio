@@ -1,0 +1,140 @@
+/* Render Navbar Aesthetics */
+/* ---------------------------------------------------------------------------------- */
+
+/* Navbar */
+#navbar {
+  /* Display  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  /* Spacing */
+  padding: 0.25em;
+  padding-top: 0.5em;
+
+  /* At top of page */
+  top: 0px;
+  position: fixed;
+  z-index: 1050;
+
+  /* Appearance */
+  color: var(--colWhite);
+  background-color: var(--colAccent);
+  /*
+  border-bottom: solid;
+  border-bottom-style: dotted;
+  border-width: 0.1em;
+  border-color: var(--colWhite);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  */
+}
+#navbar ul{
+  /* Display */
+  display: flex;
+
+  /* Appearance */
+  list-style: none;
+}
+#navbar ul li a {
+  color: var(--colWhite);
+  opacity: 0.75;
+
+  margin: 1em;
+}
+
+#portrait-mini {
+  /* Appearance */
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Spacing */
+  margin-left: 0.5em;
+
+  /* Animation */
+  cursor: pointer;
+  transition: scale 0.1s, transform 0.25s;
+  transition-timing-function: ease;
+}
+#portrait-mini:hover {
+  scale: 110%;
+  transform: rotate(-16deg);
+}
+#portrait-mini:active {
+  scale: 90%;
+  opacity: 0.8;
+}
+
+/* Contact Button */
+#navbar a button {
+  /* Padding */
+  padding: 0.25em 0.5em;
+
+  /* Spacing */
+  margin-left: 1em;
+  margin-right: 1em;
+
+  /* Appearance */
+  background-color: var(--colWhite);
+  color: var(--colAccent);
+  border-radius: 0.5em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  /* Animation */
+  cursor: pointer;
+  transition: all 0.1s;
+  transition-timing-function: ease;
+}
+#navbar a button:hover {
+  scale: 110%;
+}
+#navbar a button:active {
+  scale: 90%;
+  opacity: 0.8;
+}
+#navbar a button img {
+  /* Appearance */
+  position: relative;
+  top: 0.1em;
+  margin-right: 0.25em;
+  filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+}
+
+.navbar-links a {
+  /* Appearance */
+  color: var(--colWhite);
+  opacity: 0.75;
+
+  /* Spacing */
+  margin-left: 1em;
+
+  /* Animation */
+  position: relative;
+  transition: all 0.1s;
+  transition-timing-function: ease;
+}
+.navbar-links a:hover {
+  top: -1px;
+  opacity: 1;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar-links a:active {
+  top: 0px;
+  opacity: 0.5;
+}
+
+/* Wavy Border */
+#borderNavbar img {
+  width: 210%;
+  height: auto;
+  position: fixed;
+  top: 3em;
+
+  z-index: 1000;
+  scale: 100%;
+  animation: wave ease-in-out 10s infinite;
+
+  filter: drop-shadow(0px 1px 2px rgba(47, 0, 24, 0.75));
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+/* Vars */
+:root {
+    --colWhite: rgb(255, 243, 239);
+    --colAccent: rgb(187, 62, 89);
+    --colDark: rgb(62, 9, 35);
+}
+
+/* Defaults */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* Appearance */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: var(--colAccent);
+    background-color: var(--colWhite);
+    background-image: url('../assets/textures/tex-body.svg');
+    background-size: cover;
+
+    /* Prevent Unintentional Scrolling */
+    overflow-x: hidden;
+
+    /* Sizing */
+    min-width: 350px;
+}
+
+/* Prevent images from being too large */
+img {
+    width: 3em;
+}
+.img-svg {
+    width: 1em;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Sections */
+.site-section {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+
+    /* Text */
+    font-size: 1em;
+
+    /* Spacing */
+    padding: 1em;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* About Me */
+#sec-aboutme {
+    /* Appearance */
+    color: var(--colAccent);
+    box-shadow: 0px 1px 4px rgba(60, 0, 36, 0.5);
+    background-size: cover;
+
+
+    /* Sizing */
+    padding: 10em 5vh;
+
+    /* Display */
+    text-align: left;
+}
+#sec-aboutme div {
+    margin-top: 2em;
+}
+#sec-aboutme h2 {
+    margin-bottom: 0.25em;
+}
+#sec-aboutme p {
+    margin-top: 0.5em;
+    opacity: 0.75;
+}
+#sec-aboutme img {
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-radius: 0.5em;
+}
+
+#aboutme-img {
+    text-align: center;
+    margin-left: 1em;
+}
+#aboutme-img img {
+    margin-top: 1em;
+    border: none;
+    box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 550px;
+}
+#aboutme-img p {
+    font-style: italic;
+    opacity: 0.5;
+    scale: 90%;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Other Parts */
+.btn-social {
+    /* Spacing */
+    padding: 0.25em;
+    margin: 0.25em;
+
+    /* Appearance */
+    width: 2em;
+    height: 2em;
+    border-radius: 0.25em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Animation */
+    cursor: pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease;
+}
+.btn-social:hover {
+    background-color: white;
+    scale: 110%;
+    transform: translateY(-4px);
+}
+.btn-social:active {
+    scale: 90%;
+}
+.btn-social img {
+    /* Appearance */
+    filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+
+    /* Spacing */
+    position: relative;
+    top: 0.1em;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Scroll links */
+.scroll-link {
+    cursor: pointer;
+}

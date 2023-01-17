@@ -1,0 +1,107 @@
+/* Footer Aesthetics */
+
+/* Wavy Border */
+#borderFooter img {
+  width: 210%;
+  height: auto;
+  position: relative;
+  bottom: -0.5em;
+
+  z-index: 1000;
+  scale: 100%;
+  animation: wave ease-in-out 8s infinite;
+
+  overflow: hidden;
+
+  filter: drop-shadow(0px -1px 1px rgba(79, 0, 41, 0.5));
+}
+
+/* Main Section Properties */
+#sec-footer {
+  /* Display */
+  display: flex;
+  flex-direction: column;
+
+  /* Appearance */
+  background-color: var(--colAccent);
+  color: var(--colWhite);
+  border-top: solid;
+  border-top-style: dotted;
+  border-width: 0.1em;
+  border-color: var(--colWhite);
+
+  /* Spacing */
+  text-align: center;
+}
+#sec-footer-main {
+  /* Spacing */
+  padding: 0.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+
+  /* Display */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+#sec-footer-main div {
+  width: 35%;
+}
+
+/* 3-column Footer Properties */
+#footer-resources {
+  list-style: none;
+}
+#footer-resources a {
+  /* Appearance */
+  color: var(--colWhite);
+  opacity: 0.75;
+  text-decoration: underline;
+
+  /* Display */
+  display: block;
+
+  /* Spacing */
+  margin: 0.5em 0;
+}
+#footer-copyright {
+  /* Appearance */
+  scale: 0.75;
+  opacity: 0.5;
+}
+
+/* Bottom Part of Footer */
+#sec-footer-aside {
+  /* Spacing */
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+
+  /* Appearance */
+  font-style: italic;
+}
+#sec-footer-aside a button {
+  /* Spacing */
+  margin-top: 1em;
+  padding: 0.25em 0.5em;
+
+  /* Appearance */
+  border-radius: 0.25em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  color: var(--colAccent);
+
+  /* Animation */
+  cursor: pointer;
+  transition: all 0.1s;
+  transition-timing-function: ease;
+}
+#sec-footer-aside a button:hover {
+  background-color: white;
+  scale: 110%;
+}
+#sec-footer-aside a button:active {
+  scale: 90%;
+  opacity: 0.8;
+}
