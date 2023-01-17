@@ -1,10 +1,10 @@
 ///@description Create Footer
 // Import Graphics
-import iconTwitter from '../assets/icons/twitter.svg';
-import iconSoundcloud from '../assets/icons/soundcloud.svg';
+import iconTwitter from '../../assets/icons/twitter.svg';
+import iconSoundcloud from '../../assets/icons/soundcloud.svg';
 // import iconLinkedin from '../assets/icons/linkedin.svg';
 
-import borderFooter from '../assets/borders/borderFooter.svg';
+import borderFooter from '../../assets/borders/borderFooter.svg';
 
 // Handle Footer Component
 function Footer() {

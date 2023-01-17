@@ -24,6 +24,11 @@
   margin: 0;
 }
 
+/* Center Content */
+#sec-banner div {
+  /* text-align: left; */
+}
+
 #portrait-banner {
   /* Appearance */
   border-style: dotted;

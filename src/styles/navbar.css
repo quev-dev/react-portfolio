@@ -33,6 +33,9 @@
   /* Display */
   display: flex;
 
+  /* Spacing */
+  margin-right: 1em;
+
   /* Appearance */
   list-style: none;
 }

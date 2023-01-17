@@ -1,5 +1,10 @@
-/* Change Layout to Grid if media is large enough */
+/* Media is large enough - Apply Changes */
 @media only screen and (min-width: 768px) {
+    /* Make Text Larger */
+    .site-section {
+        font-size: 1.2em;
+    }
+
     /* Change Display to Grid */
     #projects-container {
         display: grid;

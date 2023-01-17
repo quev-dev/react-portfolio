@@ -29,6 +29,12 @@ body {
     min-width: 350px;
 }
 
+/* Prevent White Space */
+.App {
+    overflow-x: hidden;
+    position: relative;
+}
+
 /* Prevent images from being too large */
 img {
     width: 3em;

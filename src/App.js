@@ -1,10 +1,10 @@
 ///@description Handle Application
 // Import Components
-import Navbar from './components/navbar';
-import Banner from './components/banner';
-import Aboutme from './components/aboutme';
-import Projects from './components/projects';
-import Footer from './components/footer';
+import Navbar from './components/templates/navbar';
+import Banner from './components/layouts/banner';
+import Aboutme from './components/layouts/aboutme';
+import Projects from './components/layouts/projects';
+import Footer from './components/templates/footer';
 
 // Handle App
 function App() {
