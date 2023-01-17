@@ -1,5 +1,7 @@
 /* Media is large enough - Apply Changes */
 @media only screen and (min-width: 768px) {
+    /* ----------------------------------------------------- */
+
     /* Make Text Larger */
     .site-section {
         font-size: 1.2em;
@@ -41,5 +43,42 @@
     /* Contact Form - Make items appear horizontally */
     #sec-contact {
         flex-direction: row;
+    }
+
+    /* ----------------------------------------------------- */
+
+    /* Navbar - Hide Hamburger Icon AND Dropdown Menu */
+    #navbar-hamburger {
+        display: none;
+    }
+    #nav-dropdown *, #nav-dropdown {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+/* Only on mobile devices - make these changes: */
+@media only screen and (max-width: 767px) {
+
+    /* ------------------------------------------------------- */
+
+    /* Navbar - Hide Elements */
+    #main-navbar-links *, #navbar-contact {
+        display: none;
+    }
+    #navbar {
+        padding-top: 0.2em;
+        padding-bottom: 0.3em;
+    }
+
+    /* Change Class Appearances */
+    .scroll-link {
+        opacity: 0.75;
+        transition: all 0.1s;
+        transition-timing-function: ease;
+    }
+    .scroll-link:hover {
+        opacity: 1;
     }
 }

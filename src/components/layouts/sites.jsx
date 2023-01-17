@@ -1,8 +1,8 @@
 function Sites() {
     return (
-      <div>
-        
-      </div>
+      <section id="sec-sites" className="site-section">
+
+      </section>
     );
   }
   
