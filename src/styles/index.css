@@ -28,6 +28,9 @@ body {
     /* Sizing */
     min-width: 350px;
 }
+textarea {
+    resize: none;
+}
 
 /* Prevent White Space */
 .App {
@@ -95,7 +98,6 @@ img {
 
 #aboutme-img {
     text-align: center;
-    margin-left: 1em;
 }
 #aboutme-img img {
     margin-top: 1em;

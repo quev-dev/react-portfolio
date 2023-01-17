@@ -5,6 +5,8 @@
         font-size: 1.2em;
     }
 
+    /* ----------------------------------------------------- */
+
     /* Change Display to Grid */
     #projects-container {
         display: grid;
@@ -20,12 +22,24 @@
         grid-column: 2 / span 2;
         margin-top: 3em;
     }
+
+    /* ----------------------------------------------------- */
   
     /* About Me */
     #sec-aboutme {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        padding-left: 5em;
+        padding-right: 5em;
+
+        text-align: left;
     }
-  
-  }
+
+    /* ----------------------------------------------------- */
+
+    /* Contact Form - Make items appear horizontally */
+    #sec-contact {
+        flex-direction: row;
+    }
+}

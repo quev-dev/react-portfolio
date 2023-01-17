@@ -7,15 +7,16 @@ import App from './App';
 // Import Styles
 import './styles/normalize.css';
 import './styles/index.css';
+
 import './styles/navbar.css';
+
 import './styles/banner.css';
 import './styles/projects.css';
+import './styles/contact.css';
+
 import './styles/footer.css';
 
-// Animations
 import './styles/anims.css';
-
-// Resizing
 import './styles/resize.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

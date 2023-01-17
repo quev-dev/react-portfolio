@@ -1,6 +1,6 @@
 ///@description Create Navbar
 // Import Graphics
-// import iconEnvelope from '../assets/icons/envelope.svg';
+import iconEnvelope from '../../assets/icons/envelope.svg';
 import portraitMini from '../../assets/images/profile-mini.png';
 import borderNavbar1 from '../../assets/borders/borderNav1.svg';
 
@@ -33,7 +33,7 @@ function Navbar() {
           <Link
             to="sec-aboutme" className="scroll-link"
             spy={true} smooth={true} offset={20} duration={500}>
-            About Me
+            About
           </Link>
           <Link
             to="sec-projects" className="scroll-link"
@@ -43,12 +43,15 @@ function Navbar() {
         </ul>
 
         {/* Contact Button */}
-        {/*
-        <a href="./contact.html"><button>
-          <img src={iconEnvelope} alt="" className="img-svg"/>
-          Contact Me
-        </button></a>
-        */}
+        <Link
+          to="sec-contact" className="scroll-link"
+          spy={true} smooth={true} offset={-125} duration={500}>
+          <button>
+            <img src={iconEnvelope} alt="" className="img-svg"/>
+            Contact
+          </button>
+        </Link>
+
       </header>
       
       {/* Border */}

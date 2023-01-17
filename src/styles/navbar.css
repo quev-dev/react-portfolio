@@ -71,12 +71,11 @@
 }
 
 /* Contact Button */
-#navbar a button {
+#navbar button {
   /* Padding */
   padding: 0.25em 0.5em;
 
   /* Spacing */
-  margin-left: 1em;
   margin-right: 1em;
 
   /* Appearance */
@@ -90,14 +89,14 @@
   transition: all 0.1s;
   transition-timing-function: ease;
 }
-#navbar a button:hover {
+#navbar button:hover {
   scale: 110%;
 }
-#navbar a button:active {
+#navbar button:active {
   scale: 90%;
   opacity: 0.8;
 }
-#navbar a button img {
+#navbar button img {
   /* Appearance */
   position: relative;
   top: 0.1em;
@@ -140,4 +139,8 @@
   animation: wave ease-in-out 10s infinite;
 
   filter: drop-shadow(0px 1px 2px rgba(47, 0, 24, 0.75));
+
+  pointer-events: none;
+
+  opacity: 0.95;
 }

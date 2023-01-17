@@ -25,11 +25,11 @@ function Aboutme() {
 
       {/* Images */}
       <div id="aboutme-img">
-        <img src={img2} alt="" />
-        <p>Painting study created in 2022.</p>
-
         <img src={img3} alt="" />
         <p>Screenshot from a game project.</p>
+
+        <img src={img2} alt="" />
+        <p>Painting study created in 2022.</p>
       </div>
 
     </article>
