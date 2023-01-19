@@ -24,7 +24,7 @@ function Dropdown() {
           to="sec-sites" className="scroll-link"
           spy={true} smooth={true} offset={-125} duration={500}
           >  
-          Sites
+          Web-Apps
         </Link>
         <div className="empty-gap"></div>
 

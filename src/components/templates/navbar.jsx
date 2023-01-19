@@ -56,7 +56,7 @@ function Navbar(props) {
             to="sec-sites" className="scroll-link"
             spy={true} smooth={true} offset={-100} duration={500}
             >  
-            Sites
+            Web-Apps
           </Link>
           <Link
             to="sec-projects" className="scroll-link"
