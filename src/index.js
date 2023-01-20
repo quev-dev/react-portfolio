@@ -7,7 +7,8 @@ import App from './App';
 // Import Router
 import { BrowserRouter } from 'react-router-dom';
 
-// Import Styles
+// * ---------------------------------------------------- IMPORT STYLES
+// Main Page
 import './styles/normalize.css';
 import './styles/index.css';
 import './styles/navbar.css';
@@ -20,6 +21,9 @@ import './styles/anims.css';
 
 import './styles/resize.css'
 import './styles/dropdown.css';
+
+// Thank You
+import './styles/other/thankyou.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

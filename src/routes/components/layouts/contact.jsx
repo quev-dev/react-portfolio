@@ -1,25 +1,27 @@
-// Import Graphics
-import iconEnvelope from '../../assets/icons/envelope.svg';
-
-// Import Email System
+// * Import Graphics & emailjs
+import iconEnvelope from '../../../assets/icons/envelope.svg';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+// * Handle & Render Contact Page
 function Contact() {
 
-  // Contact Function
+  // * Handle Email System
   const form = useRef();
   function sendEmail(e) {
-    // Prevent moving to different page
-    e.preventDefault();
 
     // Send Email contents to account
+    e.preventDefault();
     emailjs.sendForm('service_uy60r79', 'template_y7va01q', form.current, 'Y3zkMtCRIXlTUqifl')
+      // * SUCCESS - Go to Thank You Page
       .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+        console.log('Message was successful!')
+        console.log(result.text);
+        window.location.href = '/thankyou';
+      // ! ERROR - Get error data & redirect user to error page
+      }).catch((error) => {
+        console.log(error.text);
+      })
 
       // Reset Contact Fields
       e.target.reset();
@@ -42,7 +44,8 @@ function Contact() {
       </article>
 
       {/* Contact Form */}
-      <form ref={form} onSubmit={sendEmail} action="" id="contact-form" className="contact-part">
+      <form ref={form} onSubmit={sendEmail} action="" id="contact-form" 
+      className="contact-part">
 
         {/* Name */}
         <div className="form-element">

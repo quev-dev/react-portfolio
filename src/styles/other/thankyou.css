@@ -1,0 +1,71 @@
+/* * ------------------------------------------------------- 'Thank You' Page */
+#page-thankyou {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Sizing */
+    height: 80vh;
+    margin: 2em;
+    padding: 2em;
+
+    /* Appearance */
+    background-color: var(--colWhite);
+    border-style: dotted;
+    border-width: 2px;
+    border-radius: 1em;
+    box-shadow: 0px 2px 4px rgba(65, 0, 53, 0.5);
+}
+#thankyou-message * {
+    margin: 0.5em 0;
+}
+#thankyou-return {
+    margin-top: 1em;
+}
+
+/* * ------------------------------------------------------- Return Button */
+#thankyou-return-btn {
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+
+    /* Spacing */
+    padding: 0.5em 1em;
+
+    /* Appearance */
+    background-color: var(--colAccent);
+    color: var(--colWhite);
+    border-radius: 0.5em;
+    box-shadow: 0px 2px 4px rgba(65, 0, 53, 0.5);
+
+    /* Animation */
+    cursor: pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease;
+}
+#thankyou-return-btn:hover {
+    scale: 110%;
+}
+#thankyou-return-btn:active {
+    scale: 90%;
+    opacity: 0.8;
+}
+
+/* * ------------------------------------------------------- Icons */
+#thankyou-return-btn img {
+    /* Spacing */
+    position: relative;
+    top: 0.1em;
+    width: 1.5em;
+
+    /* Appearance */
+    filter: invert(100%);
+}
+#icon-sent-check {
+    filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+}

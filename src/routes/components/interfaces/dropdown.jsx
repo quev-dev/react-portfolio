@@ -1,6 +1,6 @@
 ///@description Create Dropdown Menu
 // Import Graphics
-import iconEnvelope from '../../assets/icons/envelope.svg';
+import iconEnvelope from '../../../assets/icons/envelope.svg';
 
 // Import React Scrolling
 import { Link } from 'react-scroll';

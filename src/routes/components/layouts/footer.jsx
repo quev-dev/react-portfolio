@@ -1,10 +1,9 @@
 ///@description Create Footer
 // Import Graphics
-import iconTwitter from '../../assets/icons/twitter.svg';
-import iconSoundcloud from '../../assets/icons/soundcloud.svg';
+import iconTwitter from '../../../assets/icons/twitter.svg';
+import iconSoundcloud from '../../../assets/icons/soundcloud.svg';
+import borderFooter from '../../../assets/borders/borderFooter.svg';
 // import iconLinkedin from '../assets/icons/linkedin.svg';
-
-import borderFooter from '../../assets/borders/borderFooter.svg';
 
 // Handle Footer Component
 function Footer() {
@@ -20,12 +19,16 @@ function Footer() {
         {/* Main Footer Contents */}
         <main id="sec-footer-main">
             <div id="footer-socials">
-                <a href="https://twitter.com/quevdev"><button className="btn-social">
+                <a href="https://twitter.com/quevdev" target="_blank" rel="noreferrer">
+                    <button className="btn-social">
                     <img src={iconTwitter} alt="Twitter Icon" className="img-svg"></img>
-                </button></a>
-                <a href="https://soundcloud.com/quevdev"><button className="btn-social">
+                    </button>
+                </a>
+                <a href="https://soundcloud.com/quevdev" target="_blank" rel="noreferrer">
+                    <button className="btn-social">
                     <img src={iconSoundcloud} alt="Soundcloud Icon" className="img-svg"></img>
-                </button></a>
+                    </button>
+                </a>
                 {/*
                 <a href="https://www.google.com/"><button className="btn-social">
                     <img src={iconLinkedin} alt="LinkedIn Icon" className="img-svg"></img>
@@ -35,9 +38,9 @@ function Footer() {
             
             <div id="footer-resources">
                 <h5>Resources used for creating this site:</h5>
-                <a href="https://neocities.org/">Neocities</a>
-                <a href="https://nodejs.org/en/">Node.js</a>
-                <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>
+                <a href="https://neocities.org/" target="_blank" rel="noreferrer">Neocities</a>
+                <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">Node.js</a>
+                <a href="https://icons.getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap Icons</a>
             </div>
 
             <div id="footer-copyright">

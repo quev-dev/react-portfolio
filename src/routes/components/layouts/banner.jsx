@@ -1,6 +1,6 @@
 ///@description Create Banner
 // Import Graphics
-import portraitBanner from '../../assets/images/profile-large.png';
+import portraitBanner from '../../../assets/images/profile-large.png';
 
 // Render Banner
 function Banner() {

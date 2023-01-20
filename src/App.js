@@ -1,46 +1,37 @@
-///@description Handle Application
-/// --- IMPORTS --- ///
-// Templates
-import Navbar from './components/templates/navbar';
-import Footer from './components/templates/footer';
-
-// Layouts
-import Banner from './components/layouts/banner';
-import Aboutme from './components/layouts/aboutme';
-import Sites from './components/layouts/sites';
-import Projects from './components/layouts/projects';
-import Contact from './components/layouts/contact';
-
-// Interfaces
-import Dropdown from './components/interfaces/dropdown';
-
-// Routes
+// * Import Routes & Pages
+import Home from './routes/Home';
+import ThankYou from './routes/ThankYou';
+import NotFound from './routes/NotFound';
 import { Route, Routes } from 'react-router-dom';
 
-// Handle App
+// TODO - Add 'alt' text to images/functions for screen-reader users.
+// TODO - Add 'Skills' Section to the site and both navbars.
+// TODO - Create scrolling-animations as you navigate the site.
+
+// * Handle App
 function App() {
-  // Render App
   return (
-    <div className="App">
+    <div className = "App"> <Routes>
+      
+      {
+        // * ----------------------------------------------------- Main Page
+      }
+      <Route path="/" element = { <Home/> }>
+      </Route>
 
-      {/* Navigation Menu */}
-      <Navbar>
-        <Dropdown></Dropdown>
-      </Navbar>
+      {
+        // * ----------------------------------------------------- Thank You Page
+      }
+      <Route path="/thankyou" element = { <ThankYou/> }>
+      </Route>
 
-      {/* Introduction */}
-      <Banner/>
-      <Aboutme/>
+      {
+        // ! ----------------------------------------------------- Error Handling Page
+      }
+      <Route path="/notfound" element = { <NotFound/> }>
+      </Route>
 
-      {/* Work */}
-      <Sites/>
-      <Projects/>
-      <Contact/>
-
-      {/* Extra Info */}
-      <Footer/>
-
-    </div>
+    </Routes> </div>
   );
 }
 

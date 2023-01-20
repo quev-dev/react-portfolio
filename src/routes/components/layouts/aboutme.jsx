@@ -1,7 +1,7 @@
 ///@description About Me Section
 // Import Images
-import img2 from '../../assets/images/about-img2.png';
-import img3 from '../../assets/images/about-img3.png';
+import img2 from '../../../assets/images/about-img2.png';
+import img3 from '../../../assets/images/about-img3.png';
 
 // Render Aboutme
 function Aboutme() {

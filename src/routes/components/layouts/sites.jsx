@@ -1,4 +1,4 @@
-import iconChart from '../../assets/icons/chart.svg';
+import iconChart from '../../../assets/icons/chart.svg';
 
 function Sites() {
     return (

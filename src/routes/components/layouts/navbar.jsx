@@ -1,9 +1,9 @@
 ///@description Create Navbar
 // Import Graphics
-import iconEnvelope from '../../assets/icons/envelope.svg';
-import iconHamburger from '../../assets/icons/hamburger.svg';
-import portraitMini from '../../assets/images/profile-mini.png';
-import borderNavbar1 from '../../assets/borders/borderNav1.svg';
+import iconEnvelope from '../../../assets/icons/envelope.svg';
+import iconHamburger from '../../../assets/icons/hamburger.svg';
+import portraitMini from '../../../assets/images/profile-mini.png';
+import borderNavbar1 from '../../../assets/borders/borderNav1.svg';
 
 // Import React Scrolling
 import { Link } from 'react-scroll';

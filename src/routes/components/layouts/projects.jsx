@@ -1,6 +1,3 @@
-// Imports
-
-
 // Render Projects
 function Projects() {
   return (
@@ -12,7 +9,7 @@ function Projects() {
         <section id="projects-container">
             {/* Music */}
             <article className="project-article" id="pa-music">
-                <form action="https://soundcloud.com/quevdev/albums">
+                <form action="https://soundcloud.com/quevdev/albums" target="_blank" rel="noreferrer">
                     <button id="btn-music"></button>
                 </form>
                 <h3>MUSIC</h3>
@@ -22,7 +19,7 @@ function Projects() {
             </article>
             {/* Gamedev */}
             <article className="project-article" id="pa-games">
-                <form action="https://quevdev.itch.io/">
+                <form action="https://quevdev.itch.io/" target="_blank" rel="noreferrer">
                     <button id="btn-games"></button>
                 </form>
                 <h3>GAME PROJECTS</h3>
@@ -32,7 +29,7 @@ function Projects() {
             </article>
             {/* Art */}
             <article className="project-article" id="pa-art">
-                <form action="">
+                <form action="https://twitter.com/quevdev" target="_blank" rel="noreferrer">
                     <button id="btn-art"></button>
                 </form>
                 <h3>ARTWORK</h3>
