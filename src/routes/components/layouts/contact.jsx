@@ -34,8 +34,7 @@ function Contact() {
       <article id="contact-desc" className="contact-part">
         <h2>Contact Me</h2>
         <p>
-          If you would like to contact me, I can be reached through my email
-          listed below. You may also send me an email with the attached form.
+          If you'd like to get in touch, send an email my way!
         </p>
         <div>
           <img src={iconEnvelope} alt="" />
@@ -57,7 +56,7 @@ function Contact() {
         {/* Email */}
         <div className="form-element">
           <label htmlFor="email" className="form-label">Email</label>
-          <input type="email" id="email" placeholder="example2023@gmail.com" required
+          <input type="email" id="email" placeholder="What's your email address?" required
           className="form-input" name="user_email"/>
         </div>
 

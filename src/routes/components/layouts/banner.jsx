@@ -1,17 +1,24 @@
-///@description Create Banner
-// Import Graphics
-import portraitBanner from '../../../assets/images/profile-large.png';
+// * Import Graphics & Particles
+// import portraitBanner from '../../../assets/images/profile-large.png';
+import BannerParticles from "../other/BannerParticles";
 
-// Render Banner
+// * Render Banner
 function Banner() {
   return (
     <section id="sec-banner" className="hidden site-section anim-slideSection">
-        <div>
-          <img id="portrait-banner" src={portraitBanner} alt=""/>
-          <h1 className="banner-header">QuevDev</h1>
-          <h3 className="banner-subheader">Front-End Web Developer</h3>
-          {/* <h4 className="banner-subheader">Florida, United States</h4> */}
-        </div>
+      <div id="particle-container">
+        {/* <img id="portrait-banner" src={portraitBanner} alt=""/> */}
+        <h1 className="banner-header">QuevDev</h1>
+        <h3 className="banner-subheader">Front-End Developer</h3>
+        <p id = "banner-caption">
+          Working to create tools with engaging UI and UX.
+        </p>
+      </div>
+
+
+      <BannerParticles></BannerParticles>
+
+
     </section>
   );
 }

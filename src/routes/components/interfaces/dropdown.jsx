@@ -19,6 +19,14 @@ function Dropdown() {
         </Link>
         <div className="empty-gap"></div>
 
+        {/* Skills */}
+        <Link
+          to="sec-skills" className="scroll-link"
+          spy={true} smooth={true} offset={-25} duration={500}>
+          Skills
+        </Link>
+        <div className="empty-gap"></div>
+
         {/* Sites */}
         <Link
           to="sec-sites" className="scroll-link"

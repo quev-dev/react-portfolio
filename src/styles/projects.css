@@ -10,7 +10,7 @@
   padding: 5em 5vh;
 
   /* Appearance */
-  box-shadow: 0px 1px 4px rgba(60, 0, 36, 0.5);
+  
 }
 #projects-overview {
   /* Spacing */
@@ -32,7 +32,7 @@
 
   /* Appearance */
   border-radius: 0.5em;
-  box-shadow: 0px 1px 4px rgba(60, 0, 36, 0.5);
+  
 }
 
 /* Project Cards */

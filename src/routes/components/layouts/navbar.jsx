@@ -53,6 +53,12 @@ function Navbar(props) {
             About
           </Link>
           <Link
+            to="sec-skills" className="scroll-link"
+            spy={true} smooth={true} offset={-100} duration={500}
+            >  
+            Skills
+          </Link>
+          <Link
             to="sec-sites" className="scroll-link"
             spy={true} smooth={true} offset={-100} duration={500}
             >  
@@ -69,7 +75,7 @@ function Navbar(props) {
         <Link id="navbar-contact"
           to="sec-contact" className="scroll-link"
           spy={true} smooth={true} offset={-125} duration={500}>
-          <button>
+          <button id = "navbar-contact-btn">
             <img src={iconEnvelope} alt="" className="img-svg"/>
             Contact
           </button>

@@ -111,6 +111,10 @@
   /* Spacing */
   margin-right: 1em;
 
+  /* Sizing */
+  width: 100%;
+  height: 100%;
+
   /* Appearance */
   background-color: var(--colWhite);
   color: var(--colAccent);
@@ -175,5 +179,5 @@
 
   pointer-events: none;
 
-  opacity: 0.95;
+  opacity: 1;
 }

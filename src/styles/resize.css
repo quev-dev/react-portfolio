@@ -45,6 +45,11 @@
         flex-direction: row;
     }
 
+    /* Contact - Resize Description */
+    #contact-desc {
+        width: 50%;
+    }
+
     /* ----------------------------------------------------- */
 
     /* Navbar - Hide Hamburger Icon AND Dropdown Menu */
