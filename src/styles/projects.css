@@ -1,13 +1,11 @@
-/* Projects Section Aesthetics */
-
-/* Main Containers */
+/* * ---------------------------------------------- Main Containers */
 #sec-projects {
   /* Display */
   display: flex;
   text-align: center;
 
   /* Sizing */
-  padding: 5em 5vh;
+  padding: 5em 0;
 
   /* Appearance */
   
@@ -21,69 +19,95 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 2em;
+  gap: 5em;
   text-align: center;
 
   /* Spacing */
-  padding: 5em 2em;
+  padding: 5em 0em;
 
   /* Appearance */
   border-radius: 0.5em;
   
 }
 
-/* Project Cards */
+/* * ---------------------------------------------- Graphics for each section */
+#pa-music {
+  background-image:
+    linear-gradient(45deg, rgba(103, 0, 15, 0.5), rgba(117, 0, 53, 0.8)),
+    url('../assets/images/proj-bg-music.png') 
+}
+#pa-games {
+  background-image:
+    linear-gradient(45deg, rgba(103, 0, 15, 0.25), rgba(117, 0, 53, 0.8)),
+    url('../assets/images/about-img3.png') 
+}
+#pa-art {
+  background-image:
+    linear-gradient(45deg, rgba(103, 0, 15, 0.25), rgba(117, 0, 53, 0.8)),
+    url('../assets/images/about-img2.png') 
+}
+
+.project-pic {
+  /* Size */
+  max-width: 40em;
+  width: 100%;
+  height: auto;
+
+  /* Appearance */
+  border-radius: 0.5em;
+
+  /* Spacing */
+  margin-top: 2em;
+
+  /* Rotation */
+  transform-origin: center;
+
+  /* Other */
+  transition: all 0.5s;
+  transition-timing-function: ease;
+  box-shadow: 0px 4px 8px rgb(30, 0, 9);
+}
+.project-pic:hover {
+  transform: rotate3d(0, 5, -1, 35deg);
+}
+
+/* .project-article div {
+  border: solid;
+  border-width: 1px;
+  border-color: red;
+} */
+
+.project-desc {
+  padding: 2em;
+}
+
+/* * ---------------------------------------------- Project Slides */
+.software-used {
+  font-style: italic;
+  margin-bottom: 1em;
+  opacity: 0.75;
+}
 .project-article {
   /* Display */
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
 
-  /* Spacing */
-  padding: 2em 1em;
+  /* Spacing & Sizing */
+  height: 100%;
+  padding: 2em 2em;
+  padding-bottom: 4em;
   
   /* Appearance */
   background-size: cover;
   background-image:
     linear-gradient(45deg, rgba(137, 0, 43, 0.75), rgba(40, 0, 21, 0.5)),
-    url('../assets/textures/tex-wavy.jpg');
-
+    url('../assets/textures/tex-wavy.png');
   color: var(--colWhite);
-  border: none;
-  border-width: 1px;
-  border-radius: 0.5em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 2px rgba(46, 0, 37, 0.5);
 
   position: relative;
-}
-.project-article button {
-  /* Appearance */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 1em;
-  height: 12em;
-  width: 12em;
-  background-image: url('../assets/images/proj-music.png');
-  background-size: cover;
-  position: relative;
-
-  /* Border */
-  border: solid;
-  border-color: var(--colAccent);
-  border-width: 4px;
-  border-style: outset;
-
-  /* Animation */
-  cursor: pointer;
-  transition: all 0.2s;
-  transition-timing-function: ease;
-}
-.project-article button:hover {
-  scale: 105%;
-  transform: rotate(-5deg);
-}
-.project-article button:active {
-  scale: 95%;
-  opacity: 0.8;
 }
 
 /* Text */
@@ -94,12 +118,40 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-#btn-music {
-  background-image: url('../assets/images/proj-music.png');
+/* * ---------------------------------------------- Buttons to Project Sites */
+.project-btn {
+  /* Appearance */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25em;
+  background-size: cover;
+  position: relative;
+
+  /* Colors */
+  border-style: solid;
+  border-width: 0.15em;
+  background-color: var(--colAccent);
+  color: var(--colWhite);
+
+  /* Spacing */
+  margin-top: 1em;
+  padding: 0.25em 0.5em;
+
+  /* Animation */
+  cursor: pointer;
+  transition: all 0.1s;
+  transition-timing-function: ease;
 }
-#btn-art {
-  background-image: url('../assets/images/proj-art.png');
+.project-btn:hover {
+  scale: 110%;
 }
-#btn-games {
-  background-image: url('../assets/images/proj-games.png');
+.project-btn:active {
+  scale: 95%;
+  opacity: 0.8;
+}
+.project-btn img {
+  position: relative;
+  top: 1px;
+  filter: invert(100%);
+  width: 1em;
+  margin-right: 0.5em;
 }

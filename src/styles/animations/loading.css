@@ -1,0 +1,16 @@
+#page-loading {
+    /* Display Properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Sizing */
+    width: 100%;
+    height: 100%;
+
+    /* Appear over everything */
+    z-index: 5000;
+    position: fixed;
+}

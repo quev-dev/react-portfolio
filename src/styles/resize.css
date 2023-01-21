@@ -9,8 +9,15 @@
 
     /* ----------------------------------------------------- */
 
-    /* Change Display to Grid */
-    #projects-container {
+    /* * ------------------------------------------------------- Projects */
+    .project-article {
+        /* Row Flex (side by side data) */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    /* #projects-container {
         display: grid;
         grid-template-columns: repeat( 4, 1fr );
         grid-auto-columns: auto auto;
@@ -23,7 +30,7 @@
     .project-article:nth-last-child(1):nth-child(odd) {
         grid-column: 2 / span 2;
         margin-top: 3em;
-    }
+    } */
 
     /* ----------------------------------------------------- */
   
@@ -40,14 +47,14 @@
 
     /* ----------------------------------------------------- */
 
-    /* Contact Form - Make items appear horizontally */
-    #sec-contact {
-        flex-direction: row;
+    /* Contact Form - Add Space */
+    #contact-form {
+        width: 50%;
     }
 
     /* Contact - Resize Description */
     #contact-desc {
-        width: 50%;
+        width: 35%;
     }
 
     /* ----------------------------------------------------- */
@@ -105,5 +112,11 @@
     .sticky-footer {
         position: absolute;
         bottom: 6.5em;
+    }
+
+    /* * ------------------------------------------------------- Projects */
+    /* Remove excess padding when viewing vertical display */
+    .project-article {
+        padding-bottom: 2em;
     }
 }

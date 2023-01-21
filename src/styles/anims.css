@@ -23,13 +23,13 @@
 }
 @keyframes wave {
   0% {
-    transform: translateX(-5px);
+    transform: translateX(-1em);
   }
   50% {
     transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-5px);
+    transform: translateX(-1em);
   }
 }
 @keyframes hover {

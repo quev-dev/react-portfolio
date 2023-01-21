@@ -11,6 +11,8 @@
     top: 3em;
     left: 0;
     padding: 1em;
+    padding-bottom: 0.75em;
+    margin-bottom: 0;
 
     /* Sizing */
     width: 100%;
@@ -19,8 +21,6 @@
     z-index: -1000;
     background-color: var(--colAccent);
     box-shadow: 0px 2px 2px rgba(42, 0, 26, 0.75);
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
 
     /* Animation */
     animation: dropdownMenu 0.5s ease;
@@ -47,4 +47,24 @@
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/* Wavy Border */
+#borderNavbarDropdown img {
+    /* Sizing */
+    width: 250%;
+  
+    /* Spacing */
+    position: fixed;
+    margin-top: 0.6em;
+
+    filter: drop-shadow(0px 2px 1px rgba(99, 0, 38, 0.5));
+  
+    /* Appearance */
+    z-index: 1;
+    opacity: 1;
+  
+    /* Other */
+    pointer-events: none;
+    animation: wave ease-in-out 10s infinite;
 }

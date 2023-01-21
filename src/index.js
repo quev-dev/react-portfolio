@@ -31,6 +31,9 @@ import './styles/other/thankyou.css';
 // Particles
 import './styles/other/particles.css'
 
+// uh huh
+import './styles/animations/loading.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
