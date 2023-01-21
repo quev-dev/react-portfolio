@@ -27,12 +27,17 @@ function Navbar(props) {
       <header id="navbar">
         
         {/* Discord Tag */}
-        <img id="portrait-mini" data-tooltip-content="Copy Discord tag"
-          src={portraitMini} 
-          onClick={() => {
-            navigator.clipboard.writeText('Quevim#2298');
-          }}
-        alt=""/>
+        <Link
+          to="sec-banner" className="scroll-link"
+          spy={true} smooth={true} offset={0} duration={500}>
+          <img id="portrait-mini" data-tooltip-content="Return to top"
+            src={portraitMini} 
+            // onClick={() => {
+            //   navigator.clipboard.writeText('Quevim#2298');
+            // }}
+          alt=""/>
+        </Link>
+
         <ReactTooltip anchorId="portrait-mini"/>
 
         {/* Hamburger Menu Icon (only show on smaller devices) */}

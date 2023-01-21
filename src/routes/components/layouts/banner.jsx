@@ -1,11 +1,14 @@
 // * Import Graphics & Particles
-// import portraitBanner from '../../../assets/images/profile-large.png';
+import Socials from '../../components/interfaces/socials';
 import BannerParticles from "../other/BannerParticles";
+import iconCaretdown from '../../../assets/icons/caretdown.svg';
 
 // * Render Banner
 function Banner() {
   return (
     <section id="sec-banner" className="hidden site-section anim-slideSection">
+
+      {/* Text */}
       <div id="particle-container">
         {/* <img id="portrait-banner" src={portraitBanner} alt=""/> */}
         <h1 className="banner-header">QuevDev</h1>
@@ -15,9 +18,16 @@ function Banner() {
         </p>
       </div>
 
+      {/* Socials */}
+      <Socials></Socials>
 
+      {/* Particle Background */}
       <BannerParticles></BannerParticles>
 
+      {/* Scroll Indicator */}
+      <div className="sticky-footer">
+        <img id="scroll-indicator" src={iconCaretdown} alt=""/>
+      </div>
 
     </section>
   );

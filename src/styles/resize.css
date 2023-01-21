@@ -66,8 +66,7 @@
 /* Only on mobile devices - make these changes: */
 @media only screen and (max-width: 767px) {
 
-    /* ------------------------------------------------------- */
-
+    /* * ------------------------------------------------------- Navbar */
     /* Navbar - Hide Elements */
     #main-navbar-links *, #navbar-contact {
         display: none;
@@ -77,6 +76,20 @@
         padding-bottom: 0.3em;
     }
 
+    /* * ------------------------------------------------------- Socials Panel */
+    /* Make panel horizontal below intro */
+    #socials-container {
+        /* Horizontal Display */
+        top: 65%; /* ORIGINALLY 50% */
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /* * ------------------------------------------------------- General Classes */
     /* Change Class Appearances */
     .scroll-link {
         opacity: 0.75;
@@ -85,5 +98,12 @@
     }
     .scroll-link:hover {
         opacity: 1;
+    }
+
+    /* * ------------------------------------------------------- Sroll Indicator */
+    /* Move scroll below socials */
+    .sticky-footer {
+        position: absolute;
+        bottom: 6.5em;
     }
 }

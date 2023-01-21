@@ -12,7 +12,10 @@ import { BrowserRouter } from 'react-router-dom';
 import './styles/normalize.css';
 import './styles/index.css';
 import './styles/navbar.css';
+
 import './styles/banner.css';
+import './styles/other/socials.css';
+
 import './styles/sites.css';
 import './styles/projects.css';
 import './styles/contact.css';
@@ -24,6 +27,9 @@ import './styles/dropdown.css';
 
 // Thank You
 import './styles/other/thankyou.css';
+
+// Particles
+import './styles/other/particles.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

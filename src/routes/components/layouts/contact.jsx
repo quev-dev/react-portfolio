@@ -33,13 +33,12 @@ function Contact() {
       {/* Description */}
       <article id="contact-desc" className="contact-part">
         <h2>Contact Me</h2>
+        <div>
+          <img src={iconEnvelope} alt="" />
+        </div>
         <p>
           If you'd like to get in touch, send an email my way!
         </p>
-        <div>
-          <img src={iconEnvelope} alt="" />
-          <p>quevdev@outlook.com</p>
-        </div>
       </article>
 
       {/* Contact Form */}

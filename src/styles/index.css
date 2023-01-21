@@ -7,6 +7,34 @@
     --colAccent: rgb(187, 62, 89);
     --colAccent2: rgb(187, 62, 122);
     --colDark: rgb(62, 9, 35);
+
+    --colCream: #f9afa5;
+}
+
+/* Prevent Weird Outlining in other browsers */
+*, *:focus, *:hover {
+    border: none;
+}
+
+/* * ---------------------------------------------------------- SCROLLBAR */
+html {
+    /* Scrollbar (FIREFOX) */
+    scrollbar-color: var(--colAccent) var(--colWhite);
+}
+::-webkit-scrollbar {
+    width: 0.5em;
+    overflow-x: none;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--colWhite);
+}
+::-webkit-scrollbar-thumb {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--colWhite);
+    background: var(--colAccent);
+    border-radius: 0.5em;
+    background-clip: padding-box;
 }
 
 /* Defaults */
@@ -67,6 +95,10 @@ img {
 
     /* Appearance */
     box-shadow: 0px 1px 1px rgba(60, 0, 36, 0.25);
+}
+.site-section:nth-child(odd) {
+    background-image: url('../assets/textures/tex-body2.svg');
+    background-size: cover;
 }
 
 /* ---------------------------------------------------------------------------------- */

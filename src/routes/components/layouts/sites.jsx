@@ -6,7 +6,7 @@ function Sites() {
         {/* Header */}
         <div>
           <h2>Web Apps</h2>
-          <p>Once I've built and uplpoaded  some web apps, you may view them here.</p>
+          <p>Once I've built and uploaded  some web apps, you may view them here.</p>
         </div>
 
         {/* Projects */}

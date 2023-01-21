@@ -1,0 +1,16 @@
+/* * ------------------------------------------------- Particle Container */
+.particle-container {
+    /* Spacing */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  
+    /* Appearance */
+    z-index: 0;
+
+    /* Prevent Interaction */
+    pointer-events: none;
+  }
+#ts-particles {
+    z-index: 0;
+}

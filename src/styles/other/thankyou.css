@@ -19,6 +19,9 @@
     border-radius: 1em;
     box-shadow: 0px 2px 4px rgba(65, 0, 53, 0.5);
 }
+#page-thankyou section {
+    z-index: 100;
+}
 #thankyou-message * {
     margin: 0.5em 0;
 }

@@ -4,7 +4,7 @@
 #sec-projects {
   /* Display */
   display: flex;
-  text-align: left;
+  text-align: center;
 
   /* Sizing */
   padding: 5em 5vh;
@@ -15,8 +15,6 @@
 #projects-overview {
   /* Spacing */
   padding-top: 0.5em;
-  padding-bottom: 1em;
-  margin-left: 1em;
 }
 #projects-container {
   /* Display */
@@ -27,8 +25,7 @@
   text-align: center;
 
   /* Spacing */
-  padding: 6em 2em;
-  margin-top: 3.5em;
+  padding: 5em 2em;
 
   /* Appearance */
   border-radius: 0.5em;
@@ -58,17 +55,6 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   position: relative;
-}
-.project-article::before {
-  /* Tilt Effect */
-  border-radius: 0.5em;
-  background: var(--colAccent);
-  transform: rotate(-5deg);
-  position: absolute;
-  z-index: -1;
-  content: '';
-  inset: 0;
-  opacity: 0.8;
 }
 .project-article button {
   /* Appearance */

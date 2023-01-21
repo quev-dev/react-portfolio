@@ -2,10 +2,10 @@
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
-import particlesConfig from "./ptBannerConfig";
+import particlesConfig from "./ptThankyouConfig";
 
 // * Handle Particle Config & Return Output
-function BannerParticles() {
+function ThankyouParticles() {
   const particlesInit = useCallback(async engine => {
     console.log(engine);
     await loadFull(engine);
@@ -25,4 +25,4 @@ function BannerParticles() {
   );
 }
 
-export default BannerParticles;
+export default ThankyouParticles;
