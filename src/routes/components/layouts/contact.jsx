@@ -34,7 +34,7 @@ function Contact() {
     <section id="sec-contact" className="site-section anim-slideSection">
 
       {/* Description */}
-      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+      <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce="true">
       <article id="contact-desc" className="contact-part">
         <h2>Contact Me</h2>
         {/* <div>

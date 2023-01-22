@@ -3,6 +3,7 @@
 import Navbar from './components/layouts/navbar';
 import Banner from './components/layouts/banner';
 import Aboutme from './components/layouts/aboutme';
+import Skills from './components/layouts/skills';
 import Sites from './components/layouts/sites';
 import Projects from './components/layouts/projects';
 import Contact from './components/layouts/contact';
@@ -23,6 +24,7 @@ function Home() {
       {/* Page Intro */}
       <Banner/>
       <Aboutme/>
+      <Skills/>
 
       {/* Works */}
       <Sites/>

@@ -1,0 +1,83 @@
+/* * ----------------------------- Containers */
+#sec-skills {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Spacing */
+    padding: 8em 0em;
+}
+#skill-desc {
+    /* Spacing */
+    padding: 0em 2em;
+    margin-bottom: 2em;
+}
+#skills-wrapper {
+    width: 50vw;
+    max-width: 40em;
+}
+#skill-icon-container {
+    /* Display */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4em, 1fr));
+    justify-content: center;
+    text-align: center;
+    vertical-align: baseline;
+
+    /* Gap */
+    gap: 1em 3em;
+    margin: 0em;
+    padding: 0em;
+}
+
+/* * ----------------------------- Cards */
+/* Card */
+.skill-card {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Sizing */
+    padding: 0.25em;
+    width: 4em;
+    height: 4em;
+
+    /* Appearance */
+    background-size: cover;
+    background-image: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)),
+        url('../../assets/textures/tex-body2.svg');
+    border-radius: 0.5em;
+    box-shadow: 0px 2px 4px rgba(68, 0, 53, 0.25);
+}
+/* Card Icon */
+.skill-card img {
+    /* Sizing */
+    width: 2em;
+    height: 2em;
+
+    /* Spacincg */
+    margin-bottom: 0.25em;
+
+    /* Appearance */
+    border-radius: 4px;
+    filter: drop-shadow(0px 2px 2px rgba(68, 0, 53, 0.25));
+}
+/* Card Title */
+.skill-card p {
+    /* Spacing */
+    position: relative;
+    bottom: 0px;
+
+    /* Sizing */
+    font-size: 0.75em;
+
+    /* Appearance */
+    font-weight: bold;
+    opacity: 0.75;
+}
