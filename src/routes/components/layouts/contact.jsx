@@ -1,7 +1,10 @@
 // * Import Graphics & emailjs
-import iconEnvelope from '../../../assets/icons/envelope.svg';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+
+// Animation Functions
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 // * Handle & Render Contact Page
 function Contact() {
@@ -31,15 +34,17 @@ function Contact() {
     <section id="sec-contact" className="site-section anim-slideSection">
 
       {/* Description */}
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
       <article id="contact-desc" className="contact-part">
         <h2>Contact Me</h2>
-        <div>
+        {/* <div>
           <img src={iconEnvelope} alt="" />
-        </div>
+        </div> */}
         <p>
           If you'd like to get in touch, send an email my way!
         </p>
       </article>
+      </AnimationOnScroll>
 
       {/* Contact Form */}
       <form ref={form} onSubmit={sendEmail} action="" id="contact-form" 

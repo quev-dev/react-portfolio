@@ -213,3 +213,8 @@ img {
     position: relative;
     filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
 }
+
+/* * idfk */
+div.animate__animated {
+    all: none;
+}

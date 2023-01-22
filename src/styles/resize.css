@@ -47,18 +47,6 @@
 
     /* ----------------------------------------------------- */
 
-    /* Contact Form - Add Space */
-    #contact-form {
-        width: 50%;
-    }
-
-    /* Contact - Resize Description */
-    #contact-desc {
-        width: 35%;
-    }
-
-    /* ----------------------------------------------------- */
-
     /* Navbar - Hide Hamburger Icon AND Dropdown Menu */
     #navbar-hamburger {
         display: none;
@@ -81,6 +69,11 @@
     #navbar {
         padding-top: 0.2em;
         padding-bottom: 0.3em;
+    }
+
+    /* * ------------------------------------------------------- Contact */
+    #contact-form {
+        width: 100%;
     }
 
     /* * ------------------------------------------------------- Socials Panel */

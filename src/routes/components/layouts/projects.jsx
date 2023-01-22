@@ -7,17 +7,22 @@ import iconFLStudio from '../../../assets/icons/iconFLStudio.png';
 import iconGamemaker from '../../../assets/icons/iconGamemaker.png';
 import iconAseprite from '../../../assets/icons/iconAseprite.png';
 import iconClipStudio from '../../../assets/icons/iconClipStudio.png';
-import iconLink from '../../../assets/icons/externalLink.svg';
+
+// Animation Functions
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Projects() {
   return (
     <section id="sec-projects" className="hidden site-section anim-slideSection">
 
       {/* Overview */}
+      <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce="true">
       <div id="projects-overview">
           <h2>Projects</h2>
           <p>You can take a look at some of the projects I've created through the links below.</p>
       </div>
+      </AnimationOnScroll>
 
       {/* All Projects */}
       <section id="projects-container">
@@ -44,7 +49,6 @@ function Projects() {
             </p>
             <form action="https://soundcloud.com/quevdev/albums" target="_blank" rel="noreferrer">
               <button className="project-btn">
-                <img src={iconLink} alt="" />
                 Albums
               </button>
             </form>
@@ -74,7 +78,6 @@ function Projects() {
             </p>
             <form action="https://quevdev.itch.io/" target="_blank" rel="noreferrer">
               <button className="project-btn">
-                <img src={iconLink} alt="" />
                 Games
               </button>
             </form>
