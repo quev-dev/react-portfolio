@@ -52,6 +52,9 @@
   height: auto;
 
   /* Appearance */
+  border-style: solid;
+  border-width: 0.25em;
+  border-color: var(--colCream);
   border-radius: 0.5em;
 
   /* Spacing */

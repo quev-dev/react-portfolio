@@ -33,8 +33,8 @@ function Sites() {
             {/* Webapp Image & Links */}
             <div className="webapp-card-contents">
               <img src={iconCone} alt="" className="icon-accent"/>
-              <button className="webapp-btn">Live</button>
-              <button className="webapp-btn">Github</button>
+              {/* <button className="webapp-btn">Live</button>
+              <button className="webapp-btn">Github</button> */}
             </div>
           </article>
           </AnimationOnScroll>

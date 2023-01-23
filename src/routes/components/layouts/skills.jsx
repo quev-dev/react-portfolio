@@ -5,6 +5,7 @@ import iconCSS from '../../../assets/icons/tools/toolCSS.svg';
 import iconJavascript from '../../../assets/icons/tools/toolJavascript.svg';
 import iconReact from '../../../assets/icons/tools/toolReact.svg';
 import iconGitbash from '../../../assets/icons/tools/toolGitbash.svg';
+import iconGithub from '../../../assets/icons/tools/toolGithub.svg';
 import iconVSCode from '../../../assets/icons/tools/toolVSCode.svg';
 import iconNodeJS from '../../../assets/icons/tools/toolNodeJS.svg';
 import iconPython from '../../../assets/icons/tools/toolPython.svg';
@@ -21,7 +22,7 @@ function Skills() {
       <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce="true">
       <div id="skill-desc">
         <h2>Skills</h2>
-        <p>Here are some of the tools I've used to build my web applications.</p>
+        <p>Here are some of the technologies I've used to build my web applications.</p>
       </div>
       </AnimationOnScroll>
 
@@ -82,6 +83,14 @@ function Skills() {
         <div className="skill-card">
           <img src={iconGitbash} alt="" />
           <p>Git Bash</p>
+        </div>
+        </AnimationOnScroll>
+
+        {/* Github */}
+        <AnimationOnScroll animateIn="animate__flipInX" animateOnce="true">
+        <div className="skill-card">
+          <img src={iconGithub} alt="" />
+          <p>Github</p>
         </div>
         </AnimationOnScroll>
 

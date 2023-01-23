@@ -2,6 +2,9 @@
 // Import Graphics
 import iconTwitter from '../../../assets/icons/twitter.svg';
 import iconSoundcloud from '../../../assets/icons/soundcloud.svg';
+import iconLinkedin from '../../../assets/icons/linkedin.svg';
+import iconGithub from '../../../assets/icons/tools/toolGithub.svg';
+
 import borderFooter from '../../../assets/borders/borderFooter.svg';
 // import iconLinkedin from '../assets/icons/linkedin.svg';
 
@@ -27,6 +30,17 @@ function Footer() {
                 <a href="https://soundcloud.com/quevdev" target="_blank" rel="noreferrer">
                     <button className="btn-social">
                     <img src={iconSoundcloud} alt="Soundcloud Icon" className="img-svg"></img>
+                    </button>
+                </a>
+                <a href="https://github.com/quev-dev" target="_blank" rel="noreferrer">
+                    <button className="btn-social">
+                    <img src={iconGithub} alt="Soundcloud Icon" className="img-svg"></img>
+                    </button>
+                </a>
+                <a href="https://soundcloud.com/quevdev" target="_blank" rel="noreferrer"
+                className="inactive">
+                    <button className="btn-social">
+                    <img src={iconLinkedin} alt="Soundcloud Icon" className="img-svg icon-inactive"></img>
                     </button>
                 </a>
                 {/*

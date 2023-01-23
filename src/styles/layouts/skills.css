@@ -54,6 +54,13 @@
         url('../../assets/textures/tex-body2.svg');
     border-radius: 0.5em;
     box-shadow: 0px 2px 4px rgba(68, 0, 53, 0.25);
+
+    /* Transition */
+    transition: all 0.1s;
+    transition-timing-function: ease;
+}
+.skill-card:hover {
+    transform: translateY(-8px);
 }
 /* Card Icon */
 .skill-card img {

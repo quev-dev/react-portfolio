@@ -34,12 +34,16 @@
     /* Animation */
     opacity: 0.75;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.1s;
     transition-timing-function: ease;
 }
 .socials-link:hover {
     opacity: 1;
-    scale: 105%;
+    transform: translateY(-4px);
+}
+.socials-link:active {
+    scale: 95%;
+    opacity: 0.5;
 }
 .socials-link img {
     /* Sizing */
