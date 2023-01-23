@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 5em;
+  gap: 1em;
   text-align: center;
 
   /* Spacing */
@@ -33,18 +33,18 @@
 /* * ---------------------------------------------- Graphics for each section */
 #pa-music {
   background-image:
-    linear-gradient(45deg, rgba(103, 0, 15, 0.5), rgba(117, 0, 53, 0.9)),
-    url('../assets/images/proj-bg-music.png') 
+    linear-gradient(45deg, rgba(97, 0, 15, 0.75), rgba(52, 0, 35, 0.8)),
+    url('../assets/images/proj-bg-music.jpg') 
 }
 #pa-games {
   background-image:
-    linear-gradient(45deg, rgba(103, 0, 15, 0.25), rgba(52, 0, 23, 1)),
-    url('../assets/images/about-img3.png') 
+    linear-gradient(45deg, rgba(71, 0, 11, 0.5), rgb(18, 0, 15)),
+    url('../assets/images/about-img3.jpg') 
 }
 #pa-art {
   background-image:
-    linear-gradient(45deg, rgba(103, 0, 15, 0.25), rgba(117, 0, 53, 0.8)),
-    url('../assets/images/about-img2.png') 
+    linear-gradient(45deg, rgba(61, 0, 9, 0.5), rgba(41, 0, 26, 0.8)),
+    url('../assets/images/about-img2.jpg') 
 }
 
 .project-pic {

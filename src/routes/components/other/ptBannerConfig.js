@@ -9,10 +9,10 @@ const particlesConfig = {
       value: "#fff",
     },
     number: {
-      value: 50,
+      value: 16,
     },
     opacity: {
-      value: { min: 0.01, max: 0.5 },
+      value: { min: 0.01, max: 0.25 },
     },
     shape: {
       "image": {
@@ -25,12 +25,12 @@ const particlesConfig = {
       // type: 'square',
     },
     size: {
-      value: { min: 1, max: 8 }
+      value: { min: 8, max: 48 }
     },
     move: {
       direction: "right",
       enable: true,
-      speed: { min: 0.25, max: 1 },
+      speed: { min: 0.1, max: 0.5 },
       straight: false,
     },
   }

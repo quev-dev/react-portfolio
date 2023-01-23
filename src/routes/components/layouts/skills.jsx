@@ -6,6 +6,8 @@ import iconJavascript from '../../../assets/icons/tools/toolJavascript.svg';
 import iconReact from '../../../assets/icons/tools/toolReact.svg';
 import iconGitbash from '../../../assets/icons/tools/toolGitbash.svg';
 import iconVSCode from '../../../assets/icons/tools/toolVSCode.svg';
+import iconNodeJS from '../../../assets/icons/tools/toolNodeJS.svg';
+import iconPython from '../../../assets/icons/tools/toolPython.svg';
 
 // Animation System
 import "animate.css/animate.min.css";
@@ -48,6 +50,22 @@ function Skills() {
         <div className="skill-card">
           <img src={iconJavascript} alt="" />
           <p>Javascript</p>
+        </div>
+        </AnimationOnScroll>
+
+        {/* Python */}
+        <AnimationOnScroll animateIn="animate__flipInX" animateOnce="true">
+        <div className="skill-card">
+          <img src={iconPython} alt="" />
+          <p>Python</p>
+        </div>
+        </AnimationOnScroll>
+
+        {/* Node JS */}
+        <AnimationOnScroll animateIn="animate__flipInX" animateOnce="true">
+        <div className="skill-card">
+          <img src={iconNodeJS} alt="" />
+          <p>Node JS</p>
         </div>
         </AnimationOnScroll>
 

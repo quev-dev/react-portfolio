@@ -1,7 +1,7 @@
 // * Import Graphics
-import picMusic from '../../../assets/images/page-soundcloud.png';
-import picGames from '../../../assets/images/page-games.png';
-import picArt from '../../../assets/images/page-art.png';
+import picMusic from '../../../assets/images/page-soundcloud.jpg';
+import picGames from '../../../assets/images/page-games.jpg';
+import picArt from '../../../assets/images/page-art.jpg';
 
 import iconFLStudio from '../../../assets/icons/iconFLStudio.png';
 import iconGamemaker from '../../../assets/icons/iconGamemaker.png';

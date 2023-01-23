@@ -16,6 +16,7 @@ import Dropdown from './components/interfaces/dropdown';
 function Home() {
   return (
     <div>
+
       {/* Navbar */}
       <Navbar>
          <Dropdown></Dropdown>
@@ -33,6 +34,7 @@ function Home() {
 
       {/* Resources & Copyright */}
       <Footer/>
+
     </div>
   );
 }

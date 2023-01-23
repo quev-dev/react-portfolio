@@ -1,7 +1,7 @@
 ///@description About Me Section
 // Import Images
-import img2 from '../../../assets/images/about-img2.png';
-import img3 from '../../../assets/images/about-img3.png';
+// import img2 from '../../../assets/images/about-img2.png';
+// import img3 from '../../../assets/images/about-img3.png';
 
 // Render Aboutme
 function Aboutme() {
@@ -12,25 +12,23 @@ function Aboutme() {
       <div>
         <h2>About me</h2>
         <p>
-          Currently studying web development, along with Python programming!
+          I'm a front-end developer creating web applications, working towards
+          becoming a full-stack developer.
         </p>
         <p>
-          In my free time, I work on game development, art and music composition - 
-          some of the projects I've created can be viewed below.
-        </p>
-        <p>
-          You can also check out some of the web apps I've built down below.
+          Away from web development, I work on game development and create my
+          own music and art assets.
         </p>
       </div>
 
       {/* Images */}
-      <div id="aboutme-img">
+      {/* <div id="aboutme-img">
         <img src={img3} alt="" />
         <p>Screenshot from a game project.</p>
 
         <img src={img2} alt="" />
         <p>Painting study created in 2022.</p>
-      </div>
+      </div> */}
 
     </article>
   );
