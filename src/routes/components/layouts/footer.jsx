@@ -38,8 +38,8 @@ function Footer() {
             
             <div id="footer-resources">
                 <h5>Resources used for creating this site:</h5>
-                <a href="https://neocities.org/" target="_blank" rel="noreferrer">Neocities</a>
-                <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">Node.js</a>
+                <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">Node JS</a>
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a>
                 <a href="https://icons.getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap Icons</a>
             </div>
 

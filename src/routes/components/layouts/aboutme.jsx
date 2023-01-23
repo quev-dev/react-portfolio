@@ -1,7 +1,12 @@
 ///@description About Me Section
-// Import Images
+// Import Graphics
+import iconWebdev from '../../../assets/icons/webdev.svg';
 // import img2 from '../../../assets/images/about-img2.png';
 // import img3 from '../../../assets/images/about-img3.png';
+
+// Import Animations
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 // Render Aboutme
 function Aboutme() {
@@ -9,26 +14,30 @@ function Aboutme() {
     <article id="sec-aboutme" className="hidden site-section anim-slideSection">
 
       {/* Text */}
-      <div>
-        <h2>About me</h2>
-        <p>
-          I'm a front-end developer creating web applications, working towards
-          becoming a full-stack developer.
-        </p>
-        <p>
-          Away from web development, I work on game development and create my
-          own music and art assets.
-        </p>
+      <div className="aboutme-item">
+        <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+          <h2 id="aboutme-header" className="section-header">About me</h2>
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+          <p className="aboutme-caption">
+            I'm a front-end developer creating web applications, who is working
+            towards full-stack development.
+          </p>
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+          <p className="aboutme-caption">
+            Away from web development, I work on small side projects consisting of
+            game development, music composition, and artwork.
+          </p>
+        </AnimationOnScroll>
       </div>
 
       {/* Images */}
-      {/* <div id="aboutme-img">
-        <img src={img3} alt="" />
-        <p>Screenshot from a game project.</p>
-
-        <img src={img2} alt="" />
-        <p>Painting study created in 2022.</p>
-      </div> */}
+      <div className="aboutme-item" id="aboutme-images">
+        <AnimationOnScroll animateIn="animate__bounceInRight" duration="1" animateOnce="true">
+          <img src={iconWebdev} alt="" />
+        </AnimationOnScroll>
+      </div>
 
     </article>
   );

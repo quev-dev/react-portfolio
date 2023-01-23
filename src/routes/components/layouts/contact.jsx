@@ -20,13 +20,14 @@ function Contact() {
       .then((result) => {
         console.log('Message was successful!')
         console.log(result.text);
-        window.location.href = '/thankyou';
+        // window.location.href = '/thankyou';
       // ! ERROR - Get error data & redirect user to error page
       }).catch((error) => {
         console.log(error.text);
       })
 
-      // Reset Contact Fields
+      // Move to new page & reset contact fields
+      window.location.href = '/thankyou';
       e.target.reset();
   };
 

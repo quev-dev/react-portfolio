@@ -1,50 +1,76 @@
-/* Site Work-In-Progress */
+/* * ----------------------------------- Webapp Sections */
 #sec-sites {
-    padding: 8em 0em;
-}
-
-.site-wip {
     /* Spacing */
-    margin: 1em 0;
+    padding: 8em 0em;
 
-    /* Prevent User Interaction */
-    pointer-events: none;
-    opacity: 0.5;
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.site-wip p {
-    font-style: italic;
-    scale: 90%;
-    opacity: 0.8;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+#webapps-overview {
+    padding: 0 2em;
+    margin-bottom: 1em;
 }
-.site-wip-contents {
+#webapps-container {
+    /* Sizing */
+    width: 90%;
+
+    /* Text */
+    text-align: left;
+}
+.webapp-card {
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Sizing */
+    padding: 1em;
+    min-height: 10em;
+
+    /* Appearance */
+    border-style: solid;
+    border-width: 0.25em;
+    border-radius: 1em;
+    background-image: url('../assets/textures/tex-body2.svg');
+    box-shadow: 0px 2px 4px rgba(59, 0, 47, 0.25);
+}
+.webapp-card-contents {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    justify-content: center;
 }
 
-/* Buttons */
-.site-btn {
-    width: 20em;
-    height: 10em;
-    padding: 0.25em;
+/* * ----------------------------------- Buttons */
+.webapp-btn {
+    /* Spacing */
     margin: 0.25em;
+    padding: 0.25em;
+
+    /* Appearance */
+    background-color: var(--colAccent);
+    color: var(--colWhite);
     border-radius: 0.5em;
-    box-shadow: 0px 2px 4px rgba(87, 0, 40, 0.5);
+    box-shadow: 0px 2px 1px rgba(59, 0, 47, 0.5);
 
-    background-color: var(--colWhite);
-
-    /* Animation */
+    /* Transition */
     cursor: pointer;
     transition: all 0.1s;
     transition-timing-function: ease;
 }
-.site-btn:hover {
-    scale: 105%;
-    transform: rotate(-2deg);
+.webapp-btn:hover {
+    scale: 110%;
 }
-.site-btn:active {
+.webapp-btn:active {
     scale: 90%;
     opacity: 0.8;
+}
+
+/* * ----------------------------------- Webapp WIPs */
+
+/* Disable any interaction with WIP elements */
+.webapp-wip {
+    pointer-events: none;
+    opacity: 0.5;
 }

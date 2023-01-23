@@ -30,6 +30,7 @@ function Projects() {
         {
           // * ----------------------------------------------- MUSIC
         }
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
         <article className="project-article" id="pa-music">
 
           {/* Visuals */}
@@ -55,10 +56,12 @@ function Projects() {
           </div>
 
         </article>
+        </AnimationOnScroll>
 
         {
           // * ----------------------------------------------- GAMEDEV
         }
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
         <article className="project-article" id="pa-games">
 
           {/* Visuals */}
@@ -84,10 +87,12 @@ function Projects() {
           </div>
 
         </article>
+        </AnimationOnScroll>
 
         {
           // * ----------------------------------------------- ART
         }
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
         <article className="project-article" id="pa-art">
 
           {/* Visuals */}
@@ -114,6 +119,7 @@ function Projects() {
           </div>
 
         </article>
+        </AnimationOnScroll>
 
       </section>
     </section>

@@ -15,6 +15,7 @@ import './styles/navbar.css';
 
 import './styles/banner.css';
 import './styles/other/socials.css';
+import './styles/layouts/aboutme.css';
 import './styles/layouts/skills.css';
 
 import './styles/sites.css';
