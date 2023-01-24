@@ -1,18 +1,18 @@
 // * --------------------------------------------- Import Components
-
 // React Function Imports
 import { lazy, Suspense } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes }  from 'react-router-dom';
 
 // Import Loading Page
-import Loading from './pages/Loading';
+import Loading from './site/Loading';
 
 // Lazy Load Components
-const Home = lazy(() => import('./routes/Home'));
-const ThankYou = lazy(() => import('./routes/ThankYou'));
-const NotFound = lazy(() => import('./routes/NotFound'));
+const Home      = lazy(() => import('./site/Home'));
+const ThankYou  = lazy(() => import('./site/ThankYou'));
+const NotFound  = lazy(() => import('./site/NotFound'));
 
 // * --------------------------------------------- Handle App
+// Render App
 function App() {
   return (
     <div className = "App">
@@ -28,4 +28,5 @@ function App() {
   );
 }
 
+// Export App
 export default App;

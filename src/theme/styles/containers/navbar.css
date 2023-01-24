@@ -1,0 +1,179 @@
+/* Render Navbar Aesthetics */
+/* ---------------------------------------------------------------------------------- */
+
+/* Navbar */
+#navbar {
+  /* Display  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  /* Spacing */
+  padding: 0.25em;
+  padding-top: 0.5em;
+
+  /* At top of page */
+  top: 0px;
+  position: fixed;
+  z-index: 1050;
+
+  /* Appearance */
+  color: var(--colWhite);
+  background-color: var(--colAccent);
+}
+
+/* Hamburger */
+#navbar-hamburger {
+  /* Spacing */
+  position: relative;
+  padding: 0.1em;
+  left: 0.5em;
+
+  /* Appearance */
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(51, 0, 45, 0.25);
+
+  /* Animation */
+  cursor: pointer;
+  transition: all 0.1s;
+  transition-timing-function: ease;
+}
+#navbar-hamburger:hover {
+  scale: 110%;
+}
+#navbar-hamburger:active {
+  scale: 90%;
+  opacity: 0.8;
+}
+#navbar-hamburger img {
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+}
+
+/* Navbar Elements */
+#navbar ul{
+  /* Display */
+  display: flex;
+
+  /* Spacing */
+  margin-right: 1em;
+
+  /* Appearance */
+  list-style: none;
+}
+#navbar ul li a {
+  color: var(--colWhite);
+  opacity: 0.75;
+
+  margin: 1em;
+}
+
+#portrait-mini {
+  /* Appearance */
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Spacing */
+  margin-left: 0.5em;
+
+  /* Animation */
+  cursor: pointer;
+  transition: scale 0.1s, transform 0.25s;
+  transition-timing-function: ease;
+}
+#portrait-mini:hover {
+  scale: 110%;
+  transform: rotate(-16deg);
+}
+#portrait-mini:active {
+  scale: 90%;
+  opacity: 0.8;
+}
+
+/* Contact Button */
+#navbar button {
+  /* Padding */
+  padding: 0.25em 0.5em;
+
+  /* Spacing */
+  margin-right: 1em;
+
+  /* Sizing */
+  width: 100%;
+  height: 100%;
+
+  /* Appearance */
+  background-color: var(--colWhite);
+  color: var(--colAccent);
+  border-radius: 0.5em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  /* Animation */
+  cursor: pointer;
+  transition: all 0.1s;
+  transition-timing-function: ease;
+}
+#navbar button:hover {
+  scale: 110%;
+}
+#navbar button:active {
+  scale: 90%;
+  opacity: 0.8;
+}
+#navbar button img {
+  /* Appearance */
+  position: relative;
+  top: 0.1em;
+  margin-right: 0.25em;
+  filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+}
+
+.navbar-links a {
+  /* Appearance */
+  color: var(--colWhite);
+  opacity: 0.75;
+
+  /* Spacing */
+  margin-left: 1em;
+
+  /* Animation */
+  position: relative;
+  transition: all 0.1s;
+  transition-timing-function: ease;
+}
+.navbar-links a:hover {
+  top: -1px;
+  opacity: 1;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar-links a:active {
+  top: 0px;
+  opacity: 0.5;
+}
+
+/* Wavy Border */
+#borderNavbar img {
+  /* Sizing */
+  width: 210%;
+  height: auto;
+
+  /* Spacing */
+  position: fixed;
+  top: 3em;
+
+  /* Appearance */
+  scale: 100%;
+  z-index: 1000;
+  opacity: 1;
+  filter: drop-shadow(0px 1px 2px rgba(47, 0, 24, 0.75));
+
+  /* Other */
+  pointer-events: none;
+  animation: wave ease-in-out 10s infinite;
+}

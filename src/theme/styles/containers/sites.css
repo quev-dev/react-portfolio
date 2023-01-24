@@ -1,0 +1,76 @@
+/* * ----------------------------------- Webapp Sections */
+#sec-sites {
+    /* Spacing */
+    padding: 8em 0em;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#webapps-overview {
+    padding: 0 2em;
+    margin-bottom: 1em;
+}
+#webapps-container {
+    /* Sizing */
+    width: 90%;
+
+    /* Text */
+    text-align: left;
+}
+.webapp-card {
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Sizing */
+    padding: 1em;
+    min-height: 10em;
+
+    /* Appearance */
+    border-style: solid;
+    border-width: 0.25em;
+    border-radius: 1em;
+    background-image: url('../../images/environment/tex-body2.svg');
+    box-shadow: 0px 2px 4px rgba(59, 0, 47, 0.25);
+}
+.webapp-card-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* * ----------------------------------- Buttons */
+.webapp-btn {
+    /* Spacing */
+    margin: 0.25em;
+    padding: 0.25em;
+
+    /* Appearance */
+    background-color: var(--colAccent);
+    color: var(--colWhite);
+    border-radius: 0.5em;
+    box-shadow: 0px 2px 1px rgba(59, 0, 47, 0.5);
+
+    /* Transition */
+    cursor: pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease;
+}
+.webapp-btn:hover {
+    scale: 110%;
+}
+.webapp-btn:active {
+    scale: 90%;
+    opacity: 0.8;
+}
+
+/* * ----------------------------------- Webapp WIPs */
+
+/* Disable any interaction with WIP elements */
+.webapp-wip {
+    pointer-events: none;
+    opacity: 0.5;
+}

@@ -1,0 +1,38 @@
+/* Section */
+#sec-aboutme {
+    /* Appearance */
+    color: var(--colAccent);
+    background-size: cover;
+
+    /* Sizing */
+    padding: 12em 2em;
+
+    /* Display */
+    text-align: left;
+}
+
+/* Section Parts */
+#aboutme-header {
+    margin-bottom: 0.25em;
+}
+.aboutme-caption {
+    margin-top: 0.5em;
+    opacity: 0.75;
+}
+
+.aboutme-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Image Content */
+#aboutme-images {
+    align-items: center;
+}
+#aboutme-images img {
+    filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+    width: 8em;
+    height: 8em;
+}

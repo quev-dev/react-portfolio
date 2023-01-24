@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+/* Vars */
+:root {
+    --colWhite: rgb(255, 243, 239);
+    --colWhite2: rgb(255, 189, 196);
+    --colAccent: rgb(187, 62, 89);
+    --colAccent2: rgb(187, 62, 122);
+    --colDark: rgb(62, 9, 35);
+
+    --colCream: #f9afa5;
+}
+
+/* Prevent Weird Outlining in other browsers */
+*, *:focus, *:hover {
+    border: none;
+}
+
+/* * ---------------------------------------------------------- INACTIVE ELEMENTS */
+.inactive-btn {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* * ---------------------------------------------------------- SCROLLBAR */
+html {
+    /* Scrollbar (FIREFOX) */
+    scrollbar-color: var(--colAccent) var(--colWhite);
+}
+::-webkit-scrollbar {
+    width: 0.5em;
+    overflow-x: none;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--colWhite);
+}
+::-webkit-scrollbar-thumb {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--colWhite);
+    background: var(--colAccent);
+    border-radius: 0.5em;
+    background-clip: padding-box;
+}
+
+/* Defaults */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* Appearance */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: var(--colAccent);
+    background-color: var(--colWhite);
+    background-image: url('../../images/environment/tex-body.svg');
+    background-size: cover;
+
+    /* Prevent Unintentional Scrolling */
+    overflow-x: hidden;
+
+    /* Sizing */
+    min-width: 350px;
+}
+textarea {
+    resize: none;
+}
+
+/* Prevent White Space */
+.App {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Prevent images from being too large */
+img {
+    width: 3em;
+}
+.img-svg {
+    width: 1em;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Sections */
+.site-section {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+    position: relative;
+
+    /* Text */
+    font-size: 1em;
+
+    /* Spacing */
+    padding: 1em;
+
+    /* Appearance */
+    box-shadow: 0px 1px 1px rgba(60, 0, 36, 0.25);
+    
+}
+.site-section:nth-child(even) {
+    background-image: url('../../images/environment/tex-body2.svg');
+    background-size: cover;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Other Parts */
+.btn-social {
+    /* Spacing */
+    padding: 0.25em;
+    margin: 0.25em;
+
+    /* Appearance */
+    width: 2em;
+    height: 2em;
+    border-radius: 0.25em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Animation */
+    cursor: pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease;
+}
+.btn-social:hover {
+    background-color: white;
+    scale: 110%;
+    transform: translateY(-4px);
+}
+.btn-social:active {
+    scale: 90%;
+}
+.btn-social img {
+    /* Appearance */
+    filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+
+    /* Spacing */
+    position: relative;
+    top: 0.1em;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Scroll links */
+.scroll-link {
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Icons */
+.icon-white {
+    position: relative;
+    margin-right: 0.25em;
+    top: 0.25em;
+    filter: invert(100%);
+    width: 1.25em;
+    height: auto;
+}
+.icon-accent {
+    top: 0.1em;
+    position: relative;
+    filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+}
+.icon-inactive {
+    pointer-events: none;
+    cursor: none;
+    opacity: 0.25;
+}
+.inactive {
+    pointer-events: none;
+    cursor: none;
+}
+
+/* * idfk */
+div.animate__animated {
+    all: none;
+}
