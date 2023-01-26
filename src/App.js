@@ -18,10 +18,13 @@ function App() {
     <div className = "App">
       <Suspense fallback={<Loading/>}>
         <Routes>
-            {/* Home, Thank You, Error */}
-            <Route path="/" element = { <Home/> }></Route>
-            <Route path="/thankyou" element = { <ThankYou/> }></Route>
-            <Route path="/notfound" element = { <NotFound/> }></Route>
+            {/* Home, Thank You */}
+            <Route path="/" element={ <Home/> }/>
+            <Route path="/thankyou" element={ <ThankYou/> }/>
+
+            {/* Error 404 - Page Not Found */}
+            <Route path="*" element={ <NotFound/> }/>
+
         </Routes>
       </Suspense>
     </div>

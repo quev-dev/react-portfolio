@@ -11,8 +11,8 @@ Hi Lucky
 ### ~~Animations~~
 * ~~Change the timing on the banner header animations to be faster. They're too slow.~~
 
-### Font Size
-* The font is too small. Go in and change the font sizes to be fairly bigger; adjusting the section sizes as needed.
+### ~~Font Size~~
+* ~~The font is too small. Go in and change the font sizes to be fairly bigger; adjusting the section sizes as needed.~~
 
 ### Not Found
 * Add an 'error 404: not found' page when the user tries to input an unsupported url.

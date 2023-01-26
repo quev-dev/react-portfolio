@@ -1,0 +1,90 @@
+/* * ------------------------------------- Containers */
+#page-notfound {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    /* Appear in middle of page */
+    width: 100vw;
+    height: 100vh;
+
+    /* Appearance */
+    background-size: cover;
+    background-image: url('../../images/environment/tex-body.svg')
+}
+#notfound-header {
+    /* Font Properties */
+    font-size: 3em;
+    
+    /* Spacing */
+    padding: 0.25em 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+
+    /* Appearance */
+    border-width: 2px;
+    background-image: url('../../images/environment/tex-body2.svg');
+    background-size: cover;
+    border-radius: 0.5em;
+    box-shadow: 0px 2px 1px rgba(47, 0, 28, 0.25);
+}
+#notfound-header h6 {
+    opacity: 0.9;
+}
+#notfound-text {
+    /* Font Properties */
+    font-size: 1.25em;
+    font-style: italic;
+
+    /* Appearance */
+    opacity: 0.75;
+}
+
+.notfound-section {
+    /* Spacing */
+    margin: 0.5em 2em;
+    padding: 0em 0.5em;
+    padding-bottom: 0.1em;
+}
+
+/* * ------------------------------------- Graphics */
+/* Bug */
+#icon-bug {
+    /* Appearance */
+    filter: invert(30%) sepia(97%) saturate(519%) hue-rotate(300deg) brightness(95%) contrast(95%);
+
+    /* Animation */
+    transition: all 0.1s;
+    transition-timing-function: ease;
+}
+#icon-bug:hover {
+    scale: 125%;
+}
+
+/* Button */
+#homepage-btn {
+    /* Spacing */
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+
+    /* Appearance */
+    background-color: var(--colAccent);
+    color: var(--colWhite);
+    text-decoration: none;
+    box-shadow: 0px 1px 2px rgba(54, 0, 36, 0.5);
+
+    /* Animation */
+    cursor: pointer;
+    transition: all 0.1s;
+    transition-timing-function: ease;
+}
+#homepage-btn:hover {
+    scale: 110%;
+}
+#homepage-btn:active {
+    scale: 90%;
+    opacity: 0.8;
+}
