@@ -52,7 +52,7 @@ html {
 body {
     /* Appearance */
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1em;
+    /* font-size: 1em; */
     color: var(--colAccent);
     background-color: var(--colWhite);
     background-image: url('../../images/environment/tex-body.svg');
@@ -94,7 +94,7 @@ img {
     position: relative;
 
     /* Text */
-    font-size: 1em;
+    font-size: 1.2em;
 
     /* Spacing */
     padding: 1em;

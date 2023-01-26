@@ -106,6 +106,26 @@
         opacity: 1;
     }
 
+    /* Decrease padding in site-sections */
+    #sec-aboutme {
+        padding: 4em 2em;
+    }
+    #sec-skills {
+        padding: 4em 2em;
+    }
+    #sec-sites {
+        padding: 4em 1em;
+    }
+    #sec-projects {
+        padding: 2em 0;
+    }
+    #projects-container {
+        padding-top: 2em;
+    }
+    #sec-contact {
+        padding: 1em 1em;
+    }
+
     /* * ------------------------------------------------------- Sroll Indicator */
     /* Move scroll below socials */
     .sticky-footer {
