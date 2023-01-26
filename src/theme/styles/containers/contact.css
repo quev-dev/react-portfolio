@@ -59,7 +59,7 @@
   width: 50%;
 
   /* Appearance */
-  background-size: contain;
+  background-size: cover;
   background-image: url("../../images/environment/tex-body2.svg");
   border-style: solid;
   border-color: var(--colAccent);
