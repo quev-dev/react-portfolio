@@ -31,6 +31,8 @@ function Home() {
       {/* Works */}
       <Sites/>
       <Projects/>
+
+      {/* Contact Page - Handle Loading/NotLoading Components */}
       <Contact/>
 
       {/* Resources & Copyright */}
