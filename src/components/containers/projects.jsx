@@ -2,13 +2,13 @@
 // Images
 import picMusic from '../../theme/images/content/page-soundcloud.jpg';
 import picGames from '../../theme/images/content/page-games.jpg';
-import picArt   from '../../theme/images/content/page-art.jpg';
+// import picArt   from '../../theme/images/content/page-art.jpg';
 
 // Icons
 import iconFLStudio   from '../../theme/images/icons/iconFLStudio.png';
 import iconGamemaker  from '../../theme/images/icons/iconGamemaker.png';
-import iconAseprite   from '../../theme/images/icons/iconAseprite.png';
-import iconClipStudio from '../../theme/images/icons/iconClipStudio.png';
+// import iconAseprite   from '../../theme/images/icons/iconAseprite.png';
+// import iconClipStudio from '../../theme/images/icons/iconClipStudio.png';
 
 // Scroll Animations
 import "animate.css/animate.min.css";
@@ -96,34 +96,7 @@ function Projects() {
         {
           // * ----------------------------------------------- ART
         }
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
-        <article className="project-article" id="pa-art">
-
-          {/* Visuals */}
-          <div className="project-visuals">
-            <h3>Artwork</h3>
-            <img className="project-pic" src={picArt} alt=""/>
-          </div>
-
-          {/* Description */}
-          <div className="project-desc">
-            <div className="software-used">
-              <img src={iconClipStudio} alt=""/>
-              <img src={iconAseprite} alt=""/>
-              <h6>I use Clip Studio Paint and Aseprite for art assets.</h6>
-            </div>
-            <p>
-              Take a look at an archive of artworks I've made in the past.
-            </p>
-            <button className="project-btn inactive-btn">
-              {/* <img src={iconLink} alt="" />
-              Artwork */}
-              (Art archive in the works.)
-            </button>
-          </div>
-
-        </article>
-        </AnimationOnScroll>
+        
 
       </section>
     </section>

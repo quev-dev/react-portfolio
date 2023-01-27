@@ -19,8 +19,7 @@ function Aboutme() {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
           <p className="aboutme-caption">
-            I'm a front-end developer creating web applications, who is working
-            towards full-stack development.
+            I'm a front-end developer, working to create unique and responsive web applications.
           </p>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">

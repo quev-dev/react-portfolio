@@ -19,7 +19,7 @@ function Banner() {
       <div id="particle-container"
       className="animate__animated animate__fadeInLeft">
         {/* <img id="portrait-banner" src={portraitBanner} alt=""/> */}
-        <h1 className="banner-header">QuevDev</h1>
+        <h1 className="banner-header">Nevin Klein</h1>
         <h3 className="banner-subheader animate__animated animate__fadeInLeft">Front-End Developer</h3>
         <p id = "banner-caption" className="animate__animated animate__fadeInLeft">
           Working to create tools with engaging UI and UX.

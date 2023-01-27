@@ -5,6 +5,9 @@ const particlesConfig = {
   },
   fpsLimit: 144,
   particles: {
+    collisions: {
+      enable: true,
+    },
     color: {
       value: "#fff",
     },

@@ -15,9 +15,9 @@ function Socials() {
         // * CONTENTS - All of the social media links are displayed below.
       }
       {/* LinkedIn */}
-      <a href="https://github.com/quev-dev" target="_blank" rel="noreferrer"
-      className="socials-link inactive">
-        <img className="icon-inactive" src={iconLinkedin} alt="" />
+      <a href="https://www.linkedin.com/in/nevin-klein/" target="_blank" rel="noreferrer"
+      className="socials-link">
+        <img src={iconLinkedin} alt="" />
       </a>
 
       {/* Twitter */}
@@ -31,12 +31,6 @@ function Socials() {
       className="socials-link">
         <img src={iconGithub} alt="" />
       </a>
-
-      {/* Instagram */}
-      {/* <a href="https://twitter.com/quevdev" target="_blank" rel="noreferrer"
-      className="socials-link">
-        <img src={iconInstagram} alt="" />
-      </a> */}
 
       {/* Soundcloud */}
       <a href="https://soundcloud.com/quevdev" target="_blank" rel="noreferrer"
