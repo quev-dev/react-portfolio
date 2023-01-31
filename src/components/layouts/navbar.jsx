@@ -2,7 +2,7 @@
 // Icons, Portrait & Navbar
 import iconEnvelope from '../../theme/images/icons/envelope.svg';
 import iconHamburger from '../../theme/images/icons/hamburger.svg';
-import portraitMini from '../../theme/images/content/profile-mini.png';
+import portraitMini from '../../theme/images/content/profile-mini.jpg';
 import borderNavbar1 from '../../theme/images/environment/borderNav1.svg';
 
 // React Scrolling
