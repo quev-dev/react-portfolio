@@ -52,11 +52,11 @@ function Projects() {
             <p>
               You can listen to some of the music I've made through soundcloud.
             </p>
-            <form action="https://soundcloud.com/quevdev/albums" target="_blank" rel="noreferrer">
+            <a href="https://soundcloud.com/quevdev/albums" target="_blank" rel="noreferrer">
               <button className="project-btn">
                 Albums
               </button>
-            </form>
+            </a>
           </div>
 
         </article>
@@ -83,11 +83,11 @@ function Projects() {
             <p>
               Check out some of the game projects I've worked on through itch.io.
             </p>
-            <form action="https://quevdev.itch.io/" target="_blank" rel="noreferrer">
+            <a href="https://quevdev.itch.io/" target="_blank" rel="noreferrer">
               <button className="project-btn">
                 Games
               </button>
-            </form>
+            </a>
           </div>
 
         </article>
