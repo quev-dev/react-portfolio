@@ -9,6 +9,7 @@ import iconGithub     from '../../theme/images/tools/toolGithub.svg';
 import iconVSCode     from '../../theme/images/tools/toolVSCode.svg';
 import iconNodeJS     from '../../theme/images/tools/toolNodeJS.svg';
 import iconPython     from '../../theme/images/tools/toolPython.svg';
+import iconTailwind   from '../../theme/images/tools/toolTailwind.png';
 
 // Scroll Animations
 import "animate.css/animate.min.css";
@@ -44,6 +45,14 @@ function Skills() {
         <div className="skill-card">
           <img src={iconCSS} alt="" />
           <p>CSS</p>
+        </div>
+        </AnimationOnScroll>
+
+        {/* Tailwind CSS */}
+        <AnimationOnScroll animateIn="animate__flipInX" animateOnce="true">
+        <div className="skill-card">
+          <img src={iconTailwind} alt="" />
+          <p>Tailwind</p>
         </div>
         </AnimationOnScroll>
 

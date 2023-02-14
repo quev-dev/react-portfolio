@@ -1,6 +1,12 @@
 // * --------------------------------------------------- Imports
 // Icons
 import iconCone from '../../theme/images/icons/cone.svg';
+import iconCloud from '../../theme/images/icons/cloud.svg';
+import iconGitHub from '../../theme/images/icons/github.svg';
+
+// Screenshots / Logos
+import picWageInsight from '../../theme/images/content/site-WageInsight.png';
+import logoWageInsight from '../../theme/images/logos/logo-WageInsight.png';
 
 // Scroll Animations
 import "animate.css/animate.min.css";
@@ -15,28 +21,61 @@ function Sites() {
       <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce="true">
       <div id="webapps-overview">
         <h2>Web Apps</h2>
-        <p>Once I've built and uploaded  some web apps, you may view them here.</p>
+        <p>Try out a selection of web applications I've created.</p>
+        <p>Both a live version and a GitHub repository are available for each project!</p>
       </div>
       </AnimationOnScroll>
 
       {/* Projects */}
       <div id="webapps-container">
 
-        {/* Work-in-progress */}
+        
+        {/* Wage Insight */}
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
-        <article className="webapp-wip webapp-card">
-
+        <article className="webapp-card">
+          
           {/* Webapp Contents */}
           <div className="webapp-card-contents">
-            <h3>Progress Report</h3>
-            <p>Currently in production.</p>
+          <img src={logoWageInsight} alt="Wage Insight Logo" className="webapp-logo"/>
+            <h3>Wage Insight</h3>
+            <p>
+              Get rough estimates on your weekly, monthly and
+              yearly expenses.
+            </p>
           </div>
 
           {/* Webapp Image & Links */}
           <div className="webapp-card-contents">
+            <img src={picWageInsight} alt="Screenshot of Wage Insight" className="webapp-pic"/>
+            <div>
+
+              <a rel="noreferrer" target="_blank" href="https://wage-insight.netlify.app/">
+              <button className="webapp-btn">
+                <img src={iconCloud} alt="Cloud Icon"/>
+                Live
+              </button>
+              </a>
+              
+              <a rel="noreferrer" target="_blank" href="https://github.com/quev-dev/wage-insight">
+              <button className="webapp-btn">
+                <img src={iconGitHub} alt="GitHub Icon" />
+                Github
+              </button>
+              </a>
+
+            </div>
+          </div>
+        </article>
+        </AnimationOnScroll>
+
+        {/* Coming Soon */}
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+        <article className="webapp-wip webapp-card">
+          <div className="webapp-card-contents">
+            <h3><i>More coming soon.</i></h3>
+          </div>
+          <div className="webapp-card-contents">
             <img src={iconCone} alt="" className="icon-accent"/>
-            {/* <button className="webapp-btn">Live</button>
-            <button className="webapp-btn">Github</button> */}
           </div>
         </article>
         </AnimationOnScroll>

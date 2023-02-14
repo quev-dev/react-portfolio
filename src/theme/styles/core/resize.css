@@ -61,6 +61,13 @@
 /* Only on mobile devices - make these changes: */
 @media only screen and (max-width: 767px) {
 
+    /* * ------------------------------------------------------- Sites */
+    /* Change layout of webapp cards to be vertical */
+    .webapp-card {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* * ------------------------------------------------------- Navbar */
     /* Navbar - Hide Elements */
     #main-navbar-links *, #navbar-contact {
