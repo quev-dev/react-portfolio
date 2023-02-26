@@ -5,8 +5,12 @@ import iconCloud from '../../theme/images/icons/cloud.svg';
 import iconGitHub from '../../theme/images/icons/github.svg';
 
 // Screenshots / Logos
-import picWageInsight from '../../theme/images/content/site-WageInsight.png';
 import logoWageInsight from '../../theme/images/logos/logo-WageInsight.png';
+import logoSocialMould from '../../theme/images/logos/logo-SocialMould.png';
+
+// Gifs
+import gifWageInsight from '../../theme/images/videos/wageInsight.gif';
+import gifSocialMould from '../../theme/images/videos/socialMould.gif';
 
 // Scroll Animations
 import "animate.css/animate.min.css";
@@ -46,7 +50,7 @@ function Sites() {
 
           {/* Webapp Image & Links */}
           <div className="webapp-card-contents">
-            <img src={picWageInsight} alt="Screenshot of Wage Insight" className="webapp-pic"/>
+            <img src={gifWageInsight} alt="Demo of Wage Insight" className="webapp-pic"/>
             <div>
 
               <a rel="noreferrer" target="_blank" href="https://wage-insight.netlify.app/">
@@ -57,6 +61,43 @@ function Sites() {
               </a>
               
               <a rel="noreferrer" target="_blank" href="https://github.com/quev-dev/wage-insight">
+              <button className="webapp-btn">
+                <img src={iconGitHub} alt="GitHub Icon" />
+                Github
+              </button>
+              </a>
+
+            </div>
+          </div>
+        </article>
+        </AnimationOnScroll>
+
+        {/* Social Mould */}
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+        <article className="webapp-card">
+          
+          {/* Webapp Contents */}
+          <div className="webapp-card-contents">
+          <img src={logoSocialMould} alt="Social Mould Logo" className="webapp-logo"/>
+            <h3>Social Mould</h3>
+            <p>
+              Generate a professional social media profile with a touch of your personality.
+            </p>
+          </div>
+
+          {/* Webapp Image & Links */}
+          <div className="webapp-card-contents">
+            <img src={gifSocialMould} alt="Demo of Social Mould" className="webapp-pic"/>
+            <div>
+
+              <a rel="noreferrer" target="_blank" href="https://social-mould.netlify.app/">
+              <button className="webapp-btn">
+                <img src={iconCloud} alt="Cloud Icon"/>
+                Live
+              </button>
+              </a>
+              
+              <a rel="noreferrer" target="_blank" href="https://github.com/quev-dev/social-mould">
               <button className="webapp-btn">
                 <img src={iconGitHub} alt="GitHub Icon" />
                 Github
